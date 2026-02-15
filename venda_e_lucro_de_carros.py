@@ -17,7 +17,7 @@ while True:
         if valor_total > 0:
             print(f"Você teve um lucro de: {cifrao} {valor_total}")
             break
-        if valor_total < 0:
+        elif valor_total < 0:
             print(f"Você teve um prejuizo de: {cifrao} {valor_total}")
             break
         else:
