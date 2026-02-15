@@ -17,8 +17,11 @@ while True:
         if valor_total > 0:
             print(f"Você teve um lucro de: {cifrao} {valor_total}")
             break
-        else:
+        if valor_total < 0:
             print(f"Você teve um prejuizo de: {cifrao} {valor_total}")
+            break
+        else:
+            print("Não teve nem prejuizo e nem lucro.")
             break
     except ValueError:
         print("Você digitou um valor inválido! Tente novamento do começo.")
